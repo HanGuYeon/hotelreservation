@@ -67,7 +67,8 @@
 
 - http 테스트
   
-![캔슬요청](https://github.com/user-attachments/assets/64e68f5c-1588-403d-bd69-df5d988b2c8c)
+![캔슬요청](https://github.com/user-attachments/assets/354e2a2d-a281-4ab7-bfdd-a67a6abc76d6)
+
 
 
 - 시나리오
@@ -79,7 +80,7 @@
 ![캔슬 카프카](https://github.com/user-attachments/assets/26cc72ef-2d18-4410-b0c3-2ee1296cc910)
 
   
-## 테스트3. 예약중 객실 재고가 없을때 비즈니스 롤백
+## 테스트3. 예약중 객실 재고가 없을때 환불 이벤트 호출
 
 - http 테스트
   
