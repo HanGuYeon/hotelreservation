@@ -37,11 +37,19 @@ public class Reserve {
 
     @PostPersist
     public void onPostPersist() {
-        ReserveRequested reserveRequested = new ReserveRequested(this);
-        reserveRequested.publishAfterCommit();
+        Date today = new Date();
+        System.out.println("--사용자 요청--");
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
+        System.out.println("[" + today + "] " + "reqType(0 예약, 1 취소) 검증하여 예약/취소 요청 : " + this.reqType);
+        if(this.reqType.equals("1")){
+            requestReserve();
+        } else {
+            requestCancle();
+        }
+    
 
-        CancleRequested cancleRequested = new CancleRequested(this);
-        cancleRequested.publishAfterCommit();
+ 
     }
 
     public static ReserveRepository repository() {
@@ -52,12 +60,22 @@ public class Reserve {
     }
 
     public void requestReserve() {
-        //implement business logic here:
+        Date today = new Date();
+        System.out.println("--reqType : " + this.reqType + " 예약 이벤트 발생--");
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
+        ReserveRequested reserveRequested = new ReserveRequested(this);
+        reserveRequested.publishAfterCommit();
 
     }
 
     public void requestCancle() {
-        //implement business logic here:
+        Date today = new Date();
+        System.out.println("--reqType : " + this.reqType + " 취소 이벤트 발생--");
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
+        CancleRequested cancleRequested = new CancleRequested(this);
+        cancleRequested.publishAfterCommit();
 
     }
 
