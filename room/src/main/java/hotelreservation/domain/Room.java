@@ -74,9 +74,13 @@ public class Room {
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
 
         System.out.println("# 예약을 위한 객실 잔여 수 확인");
+        try{
+            Thread.sleep(1000);
+        } catch (Exception e){
 
-        ReserveCompleted reserveCompleted = new ReserveCompleted();
-        reserveCompleted.publishAfterCommit();
+        }
+        //ReserveCompleted reserveCompleted = new ReserveCompleted();
+        //reserveCompleted.publishAfterCommit();
 
         OutOfStock outOfStock = new OutOfStock();
         outOfStock.publishAfterCommit();
@@ -90,7 +94,11 @@ public class Room {
         System.out.println("# 취소(3) 외부 시스템에 취소 요청");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
+        try{
+            Thread.sleep(1000);
+        } catch (Exception e){
 
+        }
         CancleCompleted cancleCompleted = new CancleCompleted();
         cancleCompleted.publishAfterCommit();
 

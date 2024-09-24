@@ -42,6 +42,11 @@ public class Reserve {
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
         System.out.println("[" + today + "] " + "reqType(0 예약, 1 취소) 검증하여 예약/취소 요청 : " + this.reqType);
+        try{
+            Thread.sleep(1000);
+        } catch (Exception e){
+
+        }
         if(this.reqType.equals("0")){
             requestReserve();
         } else {
@@ -64,6 +69,11 @@ public class Reserve {
         System.out.println("# reqType : " + this.reqType + " 예약 이벤트 발생");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
+        try{
+            Thread.sleep(1000);
+        } catch (Exception e){
+
+        }
         ReserveRequested reserveRequested = new ReserveRequested(this);
         reserveRequested.publishAfterCommit();
 
@@ -74,6 +84,11 @@ public class Reserve {
         System.out.println("# reqType : " + this.reqType + " 취소 이벤트 발생");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
+        try{
+            Thread.sleep(1000);
+        } catch (Exception e){
+
+        }
         CancleRequested cancleRequested = new CancleRequested(this);
         cancleRequested.publishAfterCommit();
 
@@ -86,6 +101,11 @@ public class Reserve {
         System.out.println("# 예약(4) 예약 완료 -> 객실 상태 변경");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
+        try{
+            Thread.sleep(1000);
+        } catch (Exception e){
+
+        }
 
     }
 
@@ -96,6 +116,11 @@ public class Reserve {
         System.out.println("# 취소(4) 취소 완료 -> 객실 상태 변경");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
+        try{
+            Thread.sleep(1000);
+        } catch (Exception e){
+
+        }
     }
     //>>> Clean Arch / Port Method
 

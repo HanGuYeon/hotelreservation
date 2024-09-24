@@ -53,7 +53,11 @@ public class Payment {
         System.out.println("# 예약(2) 결제 진행");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
+        try{
+            Thread.sleep(1000);
+        } catch (Exception e){
 
+        }
         
         PaymentCompleted paymentCompleted = new PaymentCompleted();
         paymentCompleted.publishAfterCommit();
@@ -68,7 +72,11 @@ public class Payment {
         System.out.println("# 취소(2) 환불 처리");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
+        try{
+            Thread.sleep(1000);
+        } catch (Exception e){
 
+        }
         
         RefundCompleted refundCompleted = new RefundCompleted();
         refundCompleted.publishAfterCommit();
@@ -82,9 +90,11 @@ public class Payment {
         System.out.println("# 예약(4) 잔여 객실이 없으므로 결제 환불 진행");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
+        try{
+            Thread.sleep(1000);
+        } catch (Exception e){
 
-        RefundCompleted refundCompleted = new RefundCompleted();
-        refundCompleted.publishAfterCommit();
+        }
     
     }
 
