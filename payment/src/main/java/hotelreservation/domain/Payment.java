@@ -37,11 +37,7 @@ public class Payment {
 
     @PostPersist
     public void onPostPersist() {
-        PaymentCompleted paymentCompleted = new PaymentCompleted(this);
-        paymentCompleted.publishAfterCommit();
 
-        RefundCompleted refundCompleted = new RefundCompleted(this);
-        refundCompleted.publishAfterCommit();
     }
 
     public static PaymentRepository repository() {
@@ -53,75 +49,37 @@ public class Payment {
 
     //<<< Clean Arch / Port Method
     public static void startPayment(ReserveRequested reserveRequested) {
-        //implement business logic here:
+        Date today = new Date();
+        System.out.println("# 예약(1) 결제 진행");
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
 
-        /** Example 1:  new item 
-        Payment payment = new Payment();
-        repository().save(payment);
-
-        */
-
-        /** Example 2:  finding and process
         
-        repository().findById(reserveRequested.get???()).ifPresent(payment->{
-            
-            payment // do something
-            repository().save(payment);
+        PaymentCompleted paymentCompleted = new PaymentCompleted();
+        paymentCompleted.publishAfterCommit();
 
-
-         });
-        */
 
     }
 
     //>>> Clean Arch / Port Method
     //<<< Clean Arch / Port Method
     public static void startRefund(CancleRequested cancleRequested) {
-        //implement business logic here:
+        Date today = new Date();
+        System.out.println("# 취소(1) 결제 환불 처리");
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
 
-        /** Example 1:  new item 
-        Payment payment = new Payment();
-        repository().save(payment);
-
-        */
-
-        /** Example 2:  finding and process
         
-        repository().findById(cancleRequested.get???()).ifPresent(payment->{
-            
-            payment // do something
-            repository().save(payment);
-
-
-         });
-        */
+        RefundCompleted refundCompleted = new RefundCompleted();
+        refundCompleted.publishAfterCommit();
 
     }
 
     //>>> Clean Arch / Port Method
     //<<< Clean Arch / Port Method
     public static void startRefund(OutOfStock outOfStock) {
-        //implement business logic here:
-
-        /** Example 1:  new item 
-        Payment payment = new Payment();
-        repository().save(payment);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(outOfStock.get???()).ifPresent(payment->{
-            
-            payment // do something
-            repository().save(payment);
-
-
-         });
-        */
-
+    
     }
-    //>>> Clean Arch / Port Method
 
 }
 //>>> DDD / Aggregate Root

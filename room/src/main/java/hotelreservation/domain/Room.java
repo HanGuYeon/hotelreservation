@@ -68,52 +68,32 @@ public class Room {
 
     //<<< Clean Arch / Port Method
     public static void startReserve(PaymentCompleted paymentCompleted) {
-        //implement business logic here:
+        Date today = new Date();
+        System.out.println("# 예약(2) 호텔 시스템에 예약 요청");
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
 
-        /** Example 1:  new item 
-        Room room = new Room();
-        repository().save(room);
+        System.out.println("# 예약을 위한 객실 잔여 수 확인");
 
-        OutOfStock outOfStock = new OutOfStock(room);
-        outOfStock.publishAfterCommit();
-        */
+        ReserveCompleted reserveCompleted = new ReserveCompleted();
+        reserveCompleted.publishAfterCommit();
 
-        /** Example 2:  finding and process
-        
-        repository().findById(paymentCompleted.get???()).ifPresent(room->{
-            
-            room // do something
-            repository().save(room);
-
-            OutOfStock outOfStock = new OutOfStock(room);
-            outOfStock.publishAfterCommit();
-
-         });
-        */
 
     }
 
     //>>> Clean Arch / Port Method
     //<<< Clean Arch / Port Method
     public static void startCancle(RefundCompleted refundCompleted) {
-        //implement business logic here:
+        Date today = new Date();
+        System.out.println("# 취소(2) 호텔 시스템에 취소 요청");
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
 
-        /** Example 1:  new item 
-        Room room = new Room();
-        repository().save(room);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(refundCompleted.get???()).ifPresent(room->{
-            
-            room // do something
-            repository().save(room);
+        CancleCompleted cancleCompleted = new CancleCompleted();
+        cancleCompleted.publishAfterCommit();
 
 
-         });
-        */
+     
 
     }
     //>>> Clean Arch / Port Method

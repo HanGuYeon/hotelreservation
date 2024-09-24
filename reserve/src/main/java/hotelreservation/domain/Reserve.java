@@ -38,11 +38,11 @@ public class Reserve {
     @PostPersist
     public void onPostPersist() {
         Date today = new Date();
-        System.out.println("--사용자 요청--");
+        System.out.println("# 사용자 요청");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
         System.out.println("[" + today + "] " + "reqType(0 예약, 1 취소) 검증하여 예약/취소 요청 : " + this.reqType);
-        if(this.reqType.equals("1")){
+        if(this.reqType.equals("0")){
             requestReserve();
         } else {
             requestCancle();
@@ -61,7 +61,7 @@ public class Reserve {
 
     public void requestReserve() {
         Date today = new Date();
-        System.out.println("--reqType : " + this.reqType + " 예약 이벤트 발생--");
+        System.out.println("# reqType : " + this.reqType + " 예약 이벤트 발생");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
         ReserveRequested reserveRequested = new ReserveRequested(this);
@@ -71,7 +71,7 @@ public class Reserve {
 
     public void requestCancle() {
         Date today = new Date();
-        System.out.println("--reqType : " + this.reqType + " 취소 이벤트 발생--");
+        System.out.println("# reqType : " + this.reqType + " 취소 이벤트 발생");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
         CancleRequested cancleRequested = new CancleRequested(this);
@@ -81,49 +81,21 @@ public class Reserve {
 
     //<<< Clean Arch / Port Method
     public static void updateStatus(ReserveCompleted reserveCompleted) {
-        //implement business logic here:
-
-        /** Example 1:  new item 
-        Reserve reserve = new Reserve();
-        repository().save(reserve);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(reserveCompleted.get???()).ifPresent(reserve->{
-            
-            reserve // do something
-            repository().save(reserve);
-
-
-         });
-        */
+      
+        Date today = new Date();
+        System.out.println("# 예약(3) 예약 완료 -> 객실 상태 변경");
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
 
     }
 
     //>>> Clean Arch / Port Method
     //<<< Clean Arch / Port Method
     public static void updateStatus(CancleCompleted cancleCompleted) {
-        //implement business logic here:
-
-        /** Example 1:  new item 
-        Reserve reserve = new Reserve();
-        repository().save(reserve);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(cancleCompleted.get???()).ifPresent(reserve->{
-            
-            reserve // do something
-            repository().save(reserve);
-
-
-         });
-        */
-
+        Date today = new Date();
+        System.out.println("# 취소(3) 취소 완료 -> 객실 상태 변경");
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
     }
     //>>> Clean Arch / Port Method
 
