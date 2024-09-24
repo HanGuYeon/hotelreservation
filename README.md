@@ -1,6 +1,6 @@
 # 예제 - 호텔 예약
 
-## 서비스 시나리오
+### 서비스 시나리오
 
 
 - 기능적 요구사항
@@ -13,14 +13,14 @@
 7. 고객이 예약내역을 취소할 수 있다.
 
 
-# Event Storming 결과
+### Event Storming 결과
 ![image](https://github.com/user-attachments/assets/330f12bb-c1d6-475e-9837-87cf97e5d668)
 
-# 시나리오1. 예약 정상 처리
+### 시나리오1. 예약 정상 처리
   
-# 시나리오2. 취소 정상 처리
+### 시나리오2. 취소 정상 처리
   
-# 시나리오3. 예약중 객실 재고가 없을때 비즈니스 롤백 보상처리
+### 시나리오3. 예약중 객실 재고가 없을때 비즈니스 롤백 보상처리
 
 - 테스트
 ![예약 요청 - outofstock](https://github.com/user-attachments/assets/d0895c1d-0db9-4e23-914c-e4656e0a3002)
