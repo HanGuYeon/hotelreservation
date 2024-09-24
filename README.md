@@ -28,7 +28,8 @@
 
 ### 클라우드 배포 및 단일 진입점 검증
 
-![kubectl get all](https://github.com/user-attachments/assets/62003f42-7e0f-47b1-b559-82b3c7d4018b)
+![예약 요청 - outofstock](https://github.com/user-attachments/assets/3b14a94d-1869-422f-8249-548f1f211720)
+
 
 
 ### 테스트1. 예약 정상 처리
@@ -63,7 +64,8 @@
 
 - http 테스트
   
-![예약 요청 - outofstock](https://github.com/user-attachments/assets/d0895c1d-0db9-4e23-914c-e4656e0a3002)
+![예약 요청 - outofstock](https://github.com/user-attachments/assets/c0ee1264-e1e1-4aa7-b393-5e0faa919c2b)
+
 
 
 - 플로우
