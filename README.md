@@ -31,7 +31,7 @@
 
 
 ## 클라우드 배포 및 단일 진입점 검증
-- 배포 단계사용 명령어
+- 빌드/배포 단계 사용 명령어
   - mvn package -B -Dmaven.test.skip=true
   - docker build -t 9rndus/reserve:0924 .
   - docker push 9rndus/reserve:0924
