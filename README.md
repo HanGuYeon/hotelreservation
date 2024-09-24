@@ -124,10 +124,29 @@
 ![po-w](https://github.com/user-attachments/assets/5c0a148e-e348-4162-abaf-6f18f2e02d23)
 
 
+## # Rediness probe를 통한 무정지 배포
+1. deployment.yaml 파일 readiness 설정 추가 (이미지 버전 수정)
+
+
+![무정지 deployment 설정](https://github.com/user-attachments/assets/8620473d-8184-46b2-94fd-5285438a661e)
 
 
 
+2. siege 터미널을 열어서 충분한 시간동안 부하 발생
 
+
+![무정지 seiga 테스트](https://github.com/user-attachments/assets/92d2588e-e4e5-4570-88cc-8ef5bc08a9f4)
+
+
+3. deployment.yaml 배포
+
+
+![디플로이먼트 배포](https://github.com/user-attachments/assets/e90d3918-02e2-4ac9-ae00-fbb6606deb3a)
+
+4. seige 로그 확인
+
+
+![seiga 결과](https://github.com/user-attachments/assets/0ed6ae9f-867e-4264-9f94-f09db7e26940)
 
 
 
