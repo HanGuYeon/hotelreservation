@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: gateway
-          image: 9rndus/gateway:0925
+          image: "9rndus/gateway:0925"
           ports:
             - containerPort: 8080
