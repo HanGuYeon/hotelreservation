@@ -36,20 +36,7 @@
 
 - http 테스트
   
-
-
-- 플로우
-
-
-
-- 이벤트 검증 (kafka)
-
-  
-  
-### 테스트2. 취소 정상 처리
-
-- http 테스트
-  
+![예약 요청 - 정상](https://github.com/user-attachments/assets/b9ab3b21-d205-4d0a-84ce-155b02f63296)
 
 
 - 시나리오
@@ -58,7 +45,24 @@
 
 - 시나리오 이벤트 호출 검증 (kafka)
 
+![예약 - 정상](https://github.com/user-attachments/assets/7b9440b3-bed2-4aa5-ba1d-1977394888f5)
+
   
+### 테스트2. 취소 정상 처리
+
+- http 테스트
+  
+![캔슬요청](https://github.com/user-attachments/assets/64e68f5c-1588-403d-bd69-df5d988b2c8c)
+
+
+- 시나리오
+
+
+
+- 시나리오 이벤트 호출 검증 (kafka)
+
+![캔슬 카프카](https://github.com/user-attachments/assets/26cc72ef-2d18-4410-b0c3-2ee1296cc910)
+
   
 ### 테스트3. 예약중 객실 재고가 없을때 비즈니스 롤백 보상처리
 
@@ -68,11 +72,11 @@
 
 
 
-- 플로우
+- 시나리오
 
 
 
-- 이벤트 검증 (kafka)
+- 시나리오 이벤트 호출 검증 (kafka)
 
   
 ![예약 - outofstock](https://github.com/user-attachments/assets/5823223e-6ce8-48c1-b2af-7ec52b4a28d0)
