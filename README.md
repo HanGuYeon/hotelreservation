@@ -28,7 +28,8 @@
 
 ### 클라우드 배포 및 단일 진입점 검증
 
-![예약 요청 - outofstock](https://github.com/user-attachments/assets/3b14a94d-1869-422f-8249-548f1f211720)
+![image](https://github.com/user-attachments/assets/1fafe884-c553-4015-8c54-22a577deb6e9)
+
 
 
 
