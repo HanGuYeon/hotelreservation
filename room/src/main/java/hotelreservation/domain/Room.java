@@ -39,14 +39,14 @@ public class Room {
 
     @PostUpdate
     public void onPostUpdate() {
-        ReserveCompleted reserveCompleted = new ReserveCompleted(this);
-        reserveCompleted.publishAfterCommit();
+        // ReserveCompleted reserveCompleted = new ReserveCompleted(this);
+        // reserveCompleted.publishAfterCommit();
 
-        CancleCompleted cancleCompleted = new CancleCompleted(this);
-        cancleCompleted.publishAfterCommit();
+        // CancleCompleted cancleCompleted = new CancleCompleted(this);
+        // cancleCompleted.publishAfterCommit();
 
-        OutOfStock outOfStock = new OutOfStock(this);
-        outOfStock.publishAfterCommit();
+        // OutOfStock outOfStock = new OutOfStock(this);
+        // outOfStock.publishAfterCommit();
     }
 
     public static RoomRepository repository() {
