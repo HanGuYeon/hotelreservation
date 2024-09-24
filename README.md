@@ -26,6 +26,10 @@
 
 ![image](https://github.com/user-attachments/assets/330f12bb-c1d6-475e-9837-87cf97e5d668)
 
+- 데이터 저장소로부터의 읽기와 업데이트 작업을 분리하기 위해 CQRS 패턴 활용 
+![image](https://github.com/user-attachments/assets/47209aa6-8bb6-46e4-a13d-a6c92ff2ccee)
+
+
 ## 클라우드 배포 및 단일 진입점 검증
 - 배포 단계사용 명령어
   - mvn package -B -Dmaven.test.skip=true
