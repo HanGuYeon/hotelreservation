@@ -31,18 +31,7 @@
 
 
 ## 클라우드 배포 및 단일 진입점 검증
-- 빌드/배포 단계 사용 명령어
-  - mvn package -B -Dmaven.test.skip=true
-  - docker build -t 9rndus/reserve:0924 .
-  - docker push 9rndus/reserve:0924
-  - kubectl apply -f kubernetes/deployment.yml
-  - kubectl apply -f kubernetes/service.yaml
 
-- Docker hub 이미지 배포
-![image](https://github.com/user-attachments/assets/8320128f-e4c3-4c1a-92ef-338eb8166219)
-
-- AKS를 활용한 서비스 배포
-![image](https://github.com/user-attachments/assets/1fafe884-c553-4015-8c54-22a577deb6e9)
 
 
 
@@ -96,5 +85,42 @@
 
   
 ![예약 - outofstock](https://github.com/user-attachments/assets/5823223e-6ce8-48c1-b2af-7ec52b4a28d0)
+
+
+# 클라우드 네이티브 운영
+## 클라우드 배포 - Container 운영
+- 빌드/배포 단계 사용 명령어
+  - mvn package -B -Dmaven.test.skip=true
+  - docker build -t 9rndus/reserve:0924 .
+  - docker push 9rndus/reserve:0924
+  - kubectl apply -f kubernetes/deployment.yml
+  - kubectl apply -f kubernetes/service.yaml
+
+- Docker hub 이미지 배포
+![image](https://github.com/user-attachments/assets/8320128f-e4c3-4c1a-92ef-338eb8166219)
+
+- AKS를 활용한 서비스 배포
+![image](https://github.com/user-attachments/assets/1fafe884-c553-4015-8c54-22a577deb6e9)
+
+## 컨테이너 자동 확장 (HPA)
+- HPA 생성
+![hpa 생성](https://github.com/user-attachments/assets/e3c5490c-ee56-47ec-8281-ff7251e3d438)
+
+- siege 테스트
+![saga 테스트](https://github.com/user-attachments/assets/f0b17237-8fe1-4bd0-9899-1fc4c178bd67)
+
+- cpu 부하 확인
+![cpu 부하 확인](https://github.com/user-attachments/assets/909ff0a6-9149-46af-93bb-25e32105f624)
+
+- pod 자동 생성 확인
+![po-w](https://github.com/user-attachments/assets/5c0a148e-e348-4162-abaf-6f18f2e02d23)
+
+
+
+
+
+
+
+
 
 
