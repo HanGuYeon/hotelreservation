@@ -88,7 +88,7 @@
 
 
 # 클라우드 네이티브 운영
-## 클라우드 배포 - Container 운영
+## 1.클라우드 배포 - Container 운영
 - 빌드/배포 단계 사용 명령어
   - mvn package -B -Dmaven.test.skip=true
   - docker build -t 9rndus/reserve:0924 .
@@ -102,7 +102,7 @@
 - AKS를 활용한 서비스 배포
 ![image](https://github.com/user-attachments/assets/1fafe884-c553-4015-8c54-22a577deb6e9)
 
-## 컨테이너 자동 확장 (HPA)
+## 2.컨테이너 자동 확장 (HPA)
 - HPA 생성
 ![hpa 생성](https://github.com/user-attachments/assets/e3c5490c-ee56-47ec-8281-ff7251e3d438)
 
