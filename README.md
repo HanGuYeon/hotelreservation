@@ -27,10 +27,17 @@
 ![image](https://github.com/user-attachments/assets/330f12bb-c1d6-475e-9837-87cf97e5d668)
 
 ## 클라우드 배포 및 단일 진입점 검증
+- 배포 단계사용 명령어
+  - mvn package -B -Dmaven.test.skip=true
+  - docker build -t 9rndus/reserve:0924 .
+  - docker push 9rndus/reserve:0924
+  - kubectl apply -f kubernetes/deployment.yml
+  - kubectl apply -f kubernetes/service.yaml
 
+- Docker hub 이미지 배포
 ![image](https://github.com/user-attachments/assets/8320128f-e4c3-4c1a-92ef-338eb8166219)
 
-
+- AKS를 활용한 서비스 배포
 ![image](https://github.com/user-attachments/assets/1fafe884-c553-4015-8c54-22a577deb6e9)
 
 
