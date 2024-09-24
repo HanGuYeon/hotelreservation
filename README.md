@@ -33,9 +33,31 @@
 
 ### 테스트1. 예약 정상 처리
 
+- http 테스트
+  
+
+
+- 플로우
+
+
+
+- 이벤트 검증 (kafka)
+
+  
   
 ### 테스트2. 취소 정상 처리
 
+- http 테스트
+  
+
+
+- 플로우
+
+
+
+- 이벤트 검증 (kafka)
+
+  
   
 ### 테스트3. 예약중 객실 재고가 없을때 비즈니스 롤백 보상처리
 
@@ -44,7 +66,12 @@
 ![예약 요청 - outofstock](https://github.com/user-attachments/assets/d0895c1d-0db9-4e23-914c-e4656e0a3002)
 
 
+- 플로우
+
+
+
 - 이벤트 검증 (kafka)
+
   
 ![예약 - outofstock](https://github.com/user-attachments/assets/5823223e-6ce8-48c1-b2af-7ec52b4a28d0)
 
