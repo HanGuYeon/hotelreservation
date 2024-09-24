@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: gateway
-          image: username/gateway:latest
+          image: 9rndus/gateway:0925
           ports:
             - containerPort: 8080
