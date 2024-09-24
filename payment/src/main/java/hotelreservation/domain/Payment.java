@@ -95,6 +95,8 @@ public class Payment {
         } catch (Exception e){
 
         }
+        RefundCompleted refundCompleted = new RefundCompleted();
+        refundCompleted.publishAfterCommit();
     
     }
 
