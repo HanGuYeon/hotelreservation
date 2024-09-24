@@ -22,18 +22,18 @@
 4. 취소처리가 완료되며 객실 상태를 업데이트한다.
 
 
-### Event Storming 결과
+## Event Storming 결과
 
 ![image](https://github.com/user-attachments/assets/330f12bb-c1d6-475e-9837-87cf97e5d668)
 
-### 클라우드 배포 및 단일 진입점 검증
+## 클라우드 배포 및 단일 진입점 검증
 
 ![image](https://github.com/user-attachments/assets/1fafe884-c553-4015-8c54-22a577deb6e9)
 
 
 
 
-### 테스트1. 예약 정상 처리
+## 테스트1. 예약 정상 처리
 
 - http 테스트
   
@@ -65,7 +65,7 @@
 ![캔슬 카프카](https://github.com/user-attachments/assets/26cc72ef-2d18-4410-b0c3-2ee1296cc910)
 
   
-### 테스트3. 예약중 객실 재고가 없을때 비즈니스 롤백 보상처리
+## 테스트3. 예약중 객실 재고가 없을때 비즈니스 롤백 보상처리
 
 - http 테스트
   
