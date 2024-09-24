@@ -69,7 +69,7 @@ public class Room {
     //<<< Clean Arch / Port Method
     public static void startReserve(PaymentCompleted paymentCompleted) {
         Date today = new Date();
-        System.out.println("# 예약(2) 호텔 시스템에 예약 요청");
+        System.out.println("# 예약(3) 외부 시스템에 예약 요청");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
 
@@ -78,6 +78,8 @@ public class Room {
         ReserveCompleted reserveCompleted = new ReserveCompleted();
         reserveCompleted.publishAfterCommit();
 
+        OutOfStock outOfStock = new OutOfStock();
+        outOfStock.publishAfterCommit();
 
     }
 
@@ -85,7 +87,7 @@ public class Room {
     //<<< Clean Arch / Port Method
     public static void startCancle(RefundCompleted refundCompleted) {
         Date today = new Date();
-        System.out.println("# 취소(2) 호텔 시스템에 취소 요청");
+        System.out.println("# 취소(3) 외부 시스템에 취소 요청");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
 

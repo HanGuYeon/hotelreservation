@@ -50,7 +50,7 @@ public class Payment {
     //<<< Clean Arch / Port Method
     public static void startPayment(ReserveRequested reserveRequested) {
         Date today = new Date();
-        System.out.println("# 예약(1) 결제 진행");
+        System.out.println("# 예약(2) 결제 진행");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
 
@@ -65,7 +65,7 @@ public class Payment {
     //<<< Clean Arch / Port Method
     public static void startRefund(CancleRequested cancleRequested) {
         Date today = new Date();
-        System.out.println("# 취소(1) 결제 환불 처리");
+        System.out.println("# 취소(2) 환불 처리");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
 
@@ -78,6 +78,13 @@ public class Payment {
     //>>> Clean Arch / Port Method
     //<<< Clean Arch / Port Method
     public static void startRefund(OutOfStock outOfStock) {
+        Date today = new Date();
+        System.out.println("# 예약(4) 잔여 객실이 없으므로 결제 환불 진행");
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
+        System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
+
+        RefundCompleted refundCompleted = new RefundCompleted();
+        refundCompleted.publishAfterCommit();
     
     }
 

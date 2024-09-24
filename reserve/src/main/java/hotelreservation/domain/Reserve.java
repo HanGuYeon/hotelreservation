@@ -83,7 +83,7 @@ public class Reserve {
     public static void updateStatus(ReserveCompleted reserveCompleted) {
       
         Date today = new Date();
-        System.out.println("# 예약(3) 예약 완료 -> 객실 상태 변경");
+        System.out.println("# 예약(4) 예약 완료 -> 객실 상태 변경");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
 
@@ -93,7 +93,7 @@ public class Reserve {
     //<<< Clean Arch / Port Method
     public static void updateStatus(CancleCompleted cancleCompleted) {
         Date today = new Date();
-        System.out.println("# 취소(3) 취소 완료 -> 객실 상태 변경");
+        System.out.println("# 취소(4) 취소 완료 -> 객실 상태 변경");
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getClassName());
         System.out.println("[" + today + "] " + Thread.currentThread().getStackTrace()[1].getMethodName());
     }
