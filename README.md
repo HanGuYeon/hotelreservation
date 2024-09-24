@@ -79,7 +79,7 @@
 ![캔슬 카프카](https://github.com/user-attachments/assets/26cc72ef-2d18-4410-b0c3-2ee1296cc910)
 
   
-## 테스트3. 예약중 객실 재고가 없을때 비즈니스 롤백 보상처리
+## 테스트3. 예약중 객실 재고가 없을때 비즈니스 롤백
 
 - http 테스트
   
