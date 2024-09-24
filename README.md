@@ -125,7 +125,7 @@
 
 
 ## # Rediness probe를 통한 무정지 배포
-1. deployment.yaml 파일 readiness 설정 추가 (이미지 버전 수정)
+1. deployment.yaml 파일 readiness 설정 추가 (배포 테스트를 위해 이미지 버전 수정)
 
 
 ![무정지 deployment 설정](https://github.com/user-attachments/assets/8620473d-8184-46b2-94fd-5285438a661e)
