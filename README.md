@@ -15,6 +15,11 @@
 
 ![image](https://github.com/user-attachments/assets/330f12bb-c1d6-475e-9837-87cf97e5d668)
 
+### 클라우드 배포 및 단일 진입점 검증
+
+![kubectl get all](https://github.com/user-attachments/assets/62003f42-7e0f-47b1-b559-82b3c7d4018b)
+
+
 ### 시나리오1. 예약 정상 처리
 
   
