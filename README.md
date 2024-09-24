@@ -28,6 +28,9 @@
 
 ## 클라우드 배포 및 단일 진입점 검증
 
+![image](https://github.com/user-attachments/assets/8320128f-e4c3-4c1a-92ef-338eb8166219)
+
+
 ![image](https://github.com/user-attachments/assets/1fafe884-c553-4015-8c54-22a577deb6e9)
 
 
