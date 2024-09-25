@@ -161,14 +161,16 @@
 ![image](https://github.com/user-attachments/assets/9e069181-f42d-49b4-a6f8-c77c3ef0af10)
 
 
-2. deployment.yaml 파일에 pvc 매핑 설정
+2. deployment.yaml 파일 설정
 
-![image](https://github.com/user-attachments/assets/cc30048e-74fc-4807-aaf9-850f8964bc75)
+![image](https://github.com/user-attachments/assets/74602f32-3cd1-4f9b-bf75-0fe785eaf95d)
 
 
-3. PVC 설정 및 Bounding 상태 확인
 
-![image](https://github.com/user-attachments/assets/507c12c3-489f-427e-8767-68b41da657f1)
+3.  확장된 서비스에서도 test.txt가 확인되는지 검증
+
+![image](https://github.com/user-attachments/assets/969acf18-1c69-4fe8-87f2-824913d99b42)
+
 
 
 
