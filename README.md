@@ -264,3 +264,11 @@
 
 - Kibana > Index Patterns 설정
 - Analytics > Discover 를 눌러 조회페이지 오픈 및 Stack trace 확인
+
+
+## # CI/CD 파이프라인
+
+1. dev.azure.com을 통해 Azure DevOps 환경 구축
+
+
+![image](https://github.com/user-attachments/assets/913075b3-1451-422c-a1ba-093a9ade1300)
