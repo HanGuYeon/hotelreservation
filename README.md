@@ -45,6 +45,7 @@
 
 - 시나리오
 
+![11 - 복사본 (2)](https://github.com/user-attachments/assets/258b91ba-1fd9-42a3-9de6-985db358f842)
 
 
 - 시나리오 이벤트 호출 검증 (kafka)
@@ -61,6 +62,8 @@
 
 
 - 시나리오
+
+![11 - 복사본 (2) - 복사본](https://github.com/user-attachments/assets/b74cc1fc-8e28-4aca-9966-226eaf759b83)
 
 
 
@@ -79,6 +82,7 @@
 
 - 시나리오
 
+![11 - 복사본 (3) - 복사본](https://github.com/user-attachments/assets/9bb66917-cffd-4bd3-91cd-7dedfac86755)
 
 
 - 시나리오 이벤트 호출 검증 (kafka)
