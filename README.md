@@ -128,6 +128,33 @@
 ![po-w](https://github.com/user-attachments/assets/5c0a148e-e348-4162-abaf-6f18f2e02d23)
 
 
+## # 컨테이너로부터 환경분리 -ConfigMap
+
+1. ConfigMap 생성
+
+   
+![image](https://github.com/user-attachments/assets/6005fff9-976f-4842-a8a4-08cd5f103765)
+
+
+2. ConfigMap 참조를 위한 deployment.yaml 파일 수정
+
+
+![image](https://github.com/user-attachments/assets/70b44cb5-b62f-47bd-8975-97d7d63363b0)
+
+
+3. 서비스 재배포
+
+   
+![image](https://github.com/user-attachments/assets/a165a272-e3b3-4d1c-8c05-1cb76f2f7c7b)
+
+
+4. 설정 확인
+
+
+![image](https://github.com/user-attachments/assets/acc0fd2f-7530-4da6-8532-1c9642c9b3b8)
+
+
+
 ## # Rediness probe를 통한 무정지 배포
 1. deployment.yaml 파일 readiness 설정 추가 (배포 테스트를 위해 이미지 버전 수정)
 
