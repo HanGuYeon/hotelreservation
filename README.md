@@ -154,6 +154,23 @@
 ![image](https://github.com/user-attachments/assets/acc0fd2f-7530-4da6-8532-1c9642c9b3b8)
 
 
+## # 클라우드 스토리지 활용 - PVC
+
+1.  PersistentVolumeClaim 생성
+
+![image](https://github.com/user-attachments/assets/9e069181-f42d-49b4-a6f8-c77c3ef0af10)
+
+
+2. deployment.yaml 파일에 pvc 매핑 설정
+
+![image](https://github.com/user-attachments/assets/cc30048e-74fc-4807-aaf9-850f8964bc75)
+
+
+3. PVC 설정 및 Bounding 상태 확인
+
+![image](https://github.com/user-attachments/assets/507c12c3-489f-427e-8767-68b41da657f1)
+
+
 
 ## # Rediness probe를 통한 무정지 배포
 1. deployment.yaml 파일 readiness 설정 추가 (배포 테스트를 위해 이미지 버전 수정)
