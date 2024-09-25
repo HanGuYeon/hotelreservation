@@ -232,6 +232,35 @@
 
 
 
-## # 통합 모니터링
+## # 통합 모니터링 - Loggregation
 
-1.
+1. ElasticSearch 설치
+
+
+![image](https://github.com/user-attachments/assets/83226d66-be30-45d2-8a5e-60abf236834d)
+
+
+2. FluentBit & Fluent DaemonSet & Kibana 설치
+
+
+![image](https://github.com/user-attachments/assets/d6a96b3a-320e-484e-b34a-e3a5fe266a69)
+
+
+
+3. Elasticsearch 동작 확인
+
+
+![image](https://github.com/user-attachments/assets/54feb8b2-5cf2-4c63-877e-ea3b8f6db543)
+
+
+![image](https://github.com/user-attachments/assets/71c1d5b7-ae21-4dc2-aec8-a55f27040bea)
+
+
+4. Loggregation
+
+
+![image](https://github.com/user-attachments/assets/215b978c-ba01-4678-8d74-f5577a9147c1)
+
+
+- Kibana > Index Patterns 설정
+- Analytics > Discover 를 눌러 조회페이지 오픈 및 Stack trace 확인
