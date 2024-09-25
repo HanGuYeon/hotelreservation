@@ -108,17 +108,17 @@
 
 ![hpa 생성](https://github.com/user-attachments/assets/e3c5490c-ee56-47ec-8281-ff7251e3d438)
 
-3. siege 테스트
+2. siege 테스트
 
 
 ![saga 테스트](https://github.com/user-attachments/assets/f0b17237-8fe1-4bd0-9899-1fc4c178bd67)
 
-5. cpu 부하 확인
+3. cpu 부하 확인
 
 
 ![cpu 부하 확인](https://github.com/user-attachments/assets/909ff0a6-9149-46af-93bb-25e32105f624)
 
-7. pod 자동 생성 확인
+4. pod 자동 생성 확인
 
 
 ![po-w](https://github.com/user-attachments/assets/5c0a148e-e348-4162-abaf-6f18f2e02d23)
