@@ -199,6 +199,39 @@
 
 ![seiga 결과](https://github.com/user-attachments/assets/0ed6ae9f-867e-4264-9f94-f09db7e26940)
 
+## # 서비스 메쉬 응용 - Mesh
+
+1. istio & 모니터링 툴 설치
+
+   
+![image](https://github.com/user-attachments/assets/d14c386f-dc58-4f6e-9ebd-0ce9754ce188)
+
+
+2. 설치 후 ServiceType을 ClusterIP에서 LoadBalancer로 변경
+
+
+![image](https://github.com/user-attachments/assets/f6ce6266-66cc-43ca-98c0-4e489cc0372f)
+
+
+3. EXTERNAL-IP로 정상 접속 확인
+
+
+![image](https://github.com/user-attachments/assets/2f0cf2e6-814a-43c0-9430-332cb4bccc22)
+
+
+4. Istioctl kube-inject 전처리 명령어 실행
+
+
+- kubectl apply -f <(istioctl kube-inject -f deployment.yaml)
+
+
+5. Pod 레이블을 활용하여 Side car 인젝션 추가
+
+
+![image](https://github.com/user-attachments/assets/3aac6a11-42a1-4479-8e8c-e5dd7ed6fb7c)
 
 
 
+## # 통합 모니터링
+
+1.
