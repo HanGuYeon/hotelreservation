@@ -151,7 +151,8 @@
 4. 설정 확인
 
 
-![image](https://github.com/user-attachments/assets/acc0fd2f-7530-4da6-8532-1c9642c9b3b8)
+![image](https://github.com/user-attachments/assets/59a9bae5-80e2-432a-8801-f45387fa30a5)
+
 
 
 ## # 클라우드 스토리지 활용 - PVC
